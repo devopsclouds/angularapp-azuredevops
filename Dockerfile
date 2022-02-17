@@ -6,7 +6,7 @@ COPY . .
 #RUN rm -rf node_modules
 #RUN npm -g install 
 #RUN npm i -g @angular/cli
-npm install --save-dev @angular-devkit/build-angular
+RUN npm install --save-dev @angular-devkit/build-angular
 RUN npm run build --prod
 #RUN node_modules/.bin/ng build --prod
 
