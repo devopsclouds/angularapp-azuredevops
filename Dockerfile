@@ -1,9 +1,8 @@
-# stage 1
-FROM node:latest as node
+FROM node:14.17.1-alpine3.13 as node
 WORKDIR /app
 COPY . .
 #RUN npm i -g npm
-RUN npm -g install npm@7.19.1
+RUN npm -g install 
 RUN npm run build --prod
 
 # stage 2
