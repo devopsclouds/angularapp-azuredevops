@@ -2,6 +2,8 @@ FROM node:14.17.1-alpine3.13 as node
 WORKDIR /app
 COPY . .
 #RUN npm i -g npm
+RUN npm cache clean --force
+RUN rm -rf node_modules
 RUN npm -g install 
 RUN npm run build --prod
 
