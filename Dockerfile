@@ -5,7 +5,7 @@ COPY . .
 #RUN npm cache clean --force
 #RUN rm -rf node_modules
 RUN npm -g install 
-RUN npm run build --prod
+RUN npm build --prod
 #RUN node_modules/.bin/ng build --prod
 
 # stage 2
