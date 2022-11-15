@@ -14,7 +14,7 @@ spec:
     spec: 
       containers: 
       - name: angular 
-        image: docker89781/angularapp:latest
+        image: suryabezawada/angularapp:latest
         ports: 
         - containerPort: 80 
 --- 
